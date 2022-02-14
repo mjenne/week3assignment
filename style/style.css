@@ -38,7 +38,9 @@ nav {
     color:white;
     border: solid seagreen;
     text-shadow: 1px 1px lightgray;
-    
+    border-radius: 10px;
+    border:1px seagreen solid;
+    box-shadow: 5px 2px 2px seagreen;
 }
 
 nav ul {
@@ -56,16 +58,15 @@ nav li {
     flex-wrap: wrap;
     max-width: 100%;
     box-sizing: border-box;
+    justify-content: center;
 }
 
-.main-page > article {
+.main-page > .second-story {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     flex-basis: 480px;
-    flex-grow: 1;
-    margin: 1em;
-    padding: 1em;
+    margin: 10px;
+    padding: 10px;
     border-radius: 10px;
     border:1px seagreen solid;
     box-shadow: 5px 2px 2px seagreen;
@@ -74,25 +75,89 @@ nav li {
 article {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
     box-sizing: border-box;
-    justify-content: space-around;
+    justify-content:flex-start;
     height: 350px;
+    max-width: 400px;
 }
+
+.top-story {
+    min-width: 820px;
+    display: flex;
+    flex-flow:wrap;
+    align-content:flex-start;
+    box-sizing: border-box;
+    justify-content:flex-start;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px seagreen solid;
+    box-shadow: 5px 2px 2px seagreen;
+}
+.top-story img {
+    width: 50%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.top-story a {
+    text-decoration:none;
+    color:black;
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 350px;
+   padding-top: 20px;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    
+}
+
+.top-story p {
+    text-decoration:none;
+    font-size:16px;
+    max-width: 780px;
+    flex-wrap:wrap;
+    text-align: center;
+    padding-top: 20px;
+}
+    
 
 footer {
     background-color: seagreen;
+    border-radius: 10px;
+    border:1px seagreen solid;
+    box-shadow: 5px 2px 2px seagreen;
 }
 
 footer h5 {
     font-size: 20px;
     color: white;
     margin: auto;
-    width: 30%;
+    width: 40%;
     padding: 10px;
+    
 }
 
 body {
     margin-left: 10%;
     margin-right: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+
+}
+
+.second-story img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.second-story a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:10px;
 }
