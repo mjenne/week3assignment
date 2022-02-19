@@ -181,27 +181,29 @@ body {
 }
 
 .search input {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: 10px;
-        width:65%;
-        height:25px;
-        border-radius:25px;
-        border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    width:65%;
+    height:25px;
+    border-radius:25px;
+    border: none;
 }
 
 #ads {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap:wrap;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content:center;
 }
 
-#ads div {
-    flex-wrap:wrap;
+#ads > div {
+    margin: 10px;
+    padding: 10px;
     background-color: lightblue;
-    width: 100px;
-    height: 100px;
-    padding: 20px,0,20px,0;
-    margin-left:60px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
+    width: 150px;
+    height:150px;
 }
+
+
