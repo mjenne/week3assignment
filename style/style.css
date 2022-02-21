@@ -1,6 +1,6 @@
 /* Global Style */
 
-h1 {
+h1 h2 p {
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
@@ -30,6 +30,17 @@ header h1 {
     flex:1;
 }
 
+#hamburger {
+    margin-top:32px;
+}
+
+#hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 5px;
+}
 /* nav style */
 
 nav {
@@ -52,6 +63,13 @@ nav ul {
 nav li {
     margin-right:50px;
 }
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* main page style */
 
 .main-page {
     display: flex;
@@ -95,6 +113,7 @@ article {
     border:1px seagreen solid;
     box-shadow: 5px 2px 2px seagreen;
 }
+
 .top-story img {
     width: 50%;
     border-radius: 10px;
@@ -110,8 +129,7 @@ article {
     max-width: 350px;
     padding-top: 20px;
     flex-wrap: wrap;
-    padding-left: 20px;
-    
+    padding-left: 20px; 
 }
 
 .top-story p {
@@ -123,29 +141,11 @@ article {
     padding-top: 20px;
 }
     
-
-footer {
-    background-color: seagreen;
-    border-radius: 10px;
-    border:1px seagreen solid;
-    box-shadow: 5px 2px 2px seagreen;
-}
-
-footer h5 {
-    font-size: 20px;
-    color: white;
-    margin: auto;
-    width: 40%;
-    padding: 10px;
-    
-}
-
 body {
     margin-left: 10%;
     margin-right: 10%;
     padding-right: 10%;
     padding-left: 10%;
-
 }
 
 .second-story img{
@@ -161,6 +161,8 @@ body {
     font-weight: bold;
     padding-top:10px;
 }
+
+/* Search style */
 
 .search {
     background-color: seagreen;
@@ -178,17 +180,29 @@ body {
     padding-left: 100px;
     padding-right: 50px;
     color: white;
+    min-width:200px;
 }
 
 .search input {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
     margin-top: 10px;
     width:65%;
     height:25px;
     border-radius:25px;
     border: none;
+    margin-left: 20px;
 }
+
+.search img {
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+/* ads Style */
 
 #ads {
     display: flex;
@@ -206,17 +220,24 @@ body {
     height:150px;
 }
 
-#hamburger a.icon {
-    background: black;
-    display: block;
-    position: relative;
-    right: 0;
-    top: 0;
-    border: solid;
+footer {
+    background-color: seagreen;
+    border-radius: 10px;
+    border:1px seagreen solid;
+    box-shadow: 5px 2px 2px seagreen;
 }
 
+footer h5 {
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    width: 50%;
+    padding: 10px;  
+}
 
-@media only screen and (max-width: 960px) {
+/* media queries */
+
+@media only screen and (max-width: 1000px) {
   
     nav {
       display: none;
@@ -239,7 +260,28 @@ body {
     }
 
     #logo {
-        width: 400px;
-       position:sticky;
+        max-width: 400px;  
+    }
+
+    .search h2 {
+        display:none;
+    }
+
+    footer h5 {
+        justify-content: center;
+        width:100%;
+        margin: 20px;
+    
+    }
+}
+
+@media only screen and (min-width: 999px) {
+
+    #hamburger {
+      display: none;
+    }
+
+    #magnifying {
+        display: none;
     }
 }
