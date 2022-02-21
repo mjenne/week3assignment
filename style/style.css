@@ -6,10 +6,6 @@ h1 h2 p {
 
 
 /* header style */
-/* #page-top {
-    display:flex;
-    align-items: center;
-} */
 
 header {
     width:100%;
@@ -41,6 +37,7 @@ header h1 {
     margin: 6px 0;
     border-radius: 5px;
 }
+
 /* nav style */
 
 nav {
@@ -219,6 +216,8 @@ body {
     width: 150px;
     height:150px;
 }
+
+/* footer style */
 
 footer {
     background-color: seagreen;
